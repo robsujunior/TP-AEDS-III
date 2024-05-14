@@ -112,6 +112,7 @@ O código de Pesquisa Sequencial armazena os registros em um vetor
 
 - Robson da Lomba Campos Junior - robson.campos@ufvjm.edu.br
 - Samuel Couto Monteiro Assunção - monteiro.samuel@ufvjm.edu.br
+- Marcela Cristina Santos Cruz - marcela.cruz@ufvjm.edu.br
 
 
 
