@@ -274,7 +274,6 @@ int main() {
         cerr << "Erro ao abrir o arquivo de saída." << endl;
         return 1;
     }
-    arquivo_saida << "chaveSort numeroComp tempoExec\n";
 
     for (int i = 0; i < 30; i++){
         int chaveAtual = chavesSorteadas[i];
