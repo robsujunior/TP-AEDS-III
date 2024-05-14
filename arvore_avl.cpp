@@ -158,14 +158,14 @@ struct Arvore_avl {
             // Incrementa o número de interações (comparações) realizadas durante a busca
             numero_interacoes++;
             // Chama a função de busca recursivamente na subárvore esquerda
-            return Buscar(no->esquerda, chave);
+            Buscar(no->esquerda, chave);
         }
         // Se a chave é maior que a chave do nó atual, realiza busca na subárvore direita
         else if (chave > no->registro.chave){
             // Incrementa o número de interações (comparações) realizadas durante a busca
             numero_interacoes++;
             // Chama a função de busca recursivamente na subárvore direita
-            return Buscar(no->direita, chave);
+            Buscar(no->direita, chave);
         }
         // Se a chave é igual à chave do nó atual, a chave foi encontrada, retorna verdadeiro
         else
