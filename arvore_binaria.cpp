@@ -44,7 +44,7 @@ No* novoNo(Tiporeg pRegistro) {
 
 struct ArvoreBinaria {
     No* raiz;               // Ponteiro para o nó raiz da árvore
-    int numero_interacoes;  // Variável para contar o número de interações durante as operações
+    int numero_interacoes = 0;  // Variável para contar o número de interações durante as operações
 
     // Função para inserir um novo nó na árvore
     No* inserir(No* no, Tiporeg registro) {
