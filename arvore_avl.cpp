@@ -292,7 +292,9 @@ int main() {
 
         double durationInNanoSeconds = duration.count();
 
-        arquivo_saida << chaveAtual << " " << arv.numero_interacoes << " " << fixed << setprecision(10) << durationInNanoSeconds << "\n";
+        arquivo_saida << setw(20) << left << "Chave sorteada: " << setw(15) << left << chaveAtual 
+        << setw(25) << right << "Número de interações: " << setw(10) << left << arv.numero_interacoes 
+        << setw(45) << right << "Tempo de execução (Nanossegundos): " << setw(10) << left << fixed << setprecision(10) << durationInNanoSeconds << "\n";
     }
 
     

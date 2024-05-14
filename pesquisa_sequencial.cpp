@@ -99,7 +99,7 @@ int main() {
         cerr << "Erro ao abrir o arquivo de saída." << endl;  // Exibe mensagem de erro se a abertura do arquivo de saída falhar
         return 1;  // Encerra o programa com código de erro
     }
-    arquivo_saida << "chaveSort numeroComp tempoExec\n";
+    
 
     for (int i = 0; i < 30; i++){
         int chaveAtual = chavesSorteadas[i];
@@ -122,7 +122,9 @@ int main() {
 
         double durationInNanoSeconds = duration.count();
 
-        arquivo_saida << chaveAtual << " " << numeroComparacoes << " " << fixed << setprecision(10) << durationInNanoSeconds << "\n";
+        arquivo_saida << setw(20) << left << "Chave sorteada: " << setw(15) << left << chaveAtual 
+        << setw(25) << right << "Número de interações: " << setw(10) << left << numeroComparacoes
+        << setw(45) << right << "Tempo de execução (Nanossegundos): " << setw(10) << left << fixed << setprecision(10) << durationInNanoSeconds << "\n";
     }
     
 
