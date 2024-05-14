@@ -124,7 +124,7 @@ int main() {
 
         arquivo_saida << setw(20) << left << "Chave sorteada: " << setw(15) << left << chaveAtual 
         << setw(25) << right << "Número de interações: " << setw(10) << left << numeroComparacoes
-        << setw(45) << right << "Tempo de execução (Nanossegundos): " << setw(10) << left << fixed << setprecision(10) << durationInNanoSeconds << "\n";
+        << setw(45) << right << "Tempo de execução (Nanossegundos): " << setw(10) << left << fixed << setprecision(2) << durationInNanoSeconds << "\n";
     }
     
 
