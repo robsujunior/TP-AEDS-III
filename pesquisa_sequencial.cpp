@@ -44,7 +44,7 @@ Tiporeg retornaTipoReg(string s) {
 int main() {
 
     string linha, nomeArquivo;
-    int tamanhoArquivo;
+    int tamanhoArquivo, numeroComparacoes = 0;
 
     cout << "Digite o nome do arquivo de entrada: ";
     cin >> nomeArquivo;
@@ -80,7 +80,7 @@ int main() {
         return 1;  // Encerra o programa com código de erro
     }
 
-    Tiporeg *dados = new Tiporeg[tamanhoArquivo];  // Aloca dinamicamente memória para um array de estruturas
+    vector <Tiporeg> dados(tamanhoArquivo); // Aloca dinamicamente memória para um array de estruturas
     int index = 0;
 
     while (getline(arquivo, linha)) {
@@ -104,14 +104,14 @@ int main() {
     for (int i = 0; i < 30; i++){
         int chaveAtual = chavesSorteadas[i];
 
-        int numeroComparacoes = 0; // Iniciar o contador de comparações 
+        numeroComparacoes = 0; // Iniciar o contador de comparações 
 
         auto start = high_resolution_clock::now(); // Inicia timer antes de realizar a busca
 
         //Compara a chave atual com cada chave do arquivo
         for(int j = 0; j < tamanhoArquivo; j++){
             numeroComparacoes++;
-            if(dados[j].chave == chavesSorteadas[i]){
+            if(dados[j].chave == chaveAtual){
                 break;
             }
         }
@@ -129,8 +129,6 @@ int main() {
     
 
     arquivo_saida.close();  // Fecha o arquivo de saída
-
-    delete[] dados;  // Libera a memória alocada dinamicamente
 
     return 0;  // Encerra o programa com sucesso
 }
