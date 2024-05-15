@@ -105,7 +105,7 @@ O código de Pesquisa Sequencial armazena os registros em um vetor
 - O gerador gera os arquivos no próprio local onde for executado, após isso é necessário mover os arquivos para a pasta "Arquivos de Entrada"
 - É importante que as pastas "Arquivos de Saida" e "Arquivos de entrada estejam no mesmo lugar onde o executável do programa for gerado
 - Se as pastas não estiverem no mesmo lugar do executável gerado, o programa vai reportar "Erro ao abrir arquivo" ou "Erro ao abrir arquivo de saida" e encerrar.
-- Quando executar o programa, caso seja gerada uma pasta "output" com o executável, mova as pastas "Arquivos de Saida" e "Arquivos de Entrada" para dentro dessa pasta.
+- Quando compilar o programa, caso seja gerada uma pasta "output" com o executável, mova as pastas "Arquivos de Saida" e "Arquivos de Entrada" para dentro dessa pasta.
 - A pasta "Arquivos de Saida" tem dentro 3 pastas distintas, "Pesquisa Sequencial", "avl" e "binaria", cada uma vai armazenar os arquivos de saída de suas respectivas estruturas de dados, é importante que essas pastas estejam lá e escritas dessa maneira, caso contrário o programa vai reportar "Erro ao abrir arquivo de saida" e encerrar.
 
 ## Autores
